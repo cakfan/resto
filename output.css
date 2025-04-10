@@ -11,13 +11,17 @@
     --color-red-100: oklch(93.6% 0.032 17.717);
     --color-red-500: oklch(63.7% 0.237 25.331);
     --color-amber-100: oklch(96.2% 0.059 95.617);
+    --color-amber-500: oklch(76.9% 0.188 70.08);
     --color-green-100: oklch(96.2% 0.044 156.743);
+    --color-green-500: oklch(72.3% 0.219 149.579);
     --color-white: #fff;
     --spacing: 0.25rem;
     --text-lg: 1.125rem;
     --text-lg--line-height: calc(1.75 / 1.125);
     --font-weight-medium: 500;
     --font-weight-semibold: 600;
+    --radius-xl: 0.75rem;
+    --radius-3xl: 1.5rem;
     --default-transition-duration: 150ms;
     --default-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     --default-font-family: var(--font-sans);
@@ -182,17 +186,26 @@
   .right-0 {
     right: calc(var(--spacing) * 0);
   }
+  .bottom-0 {
+    bottom: calc(var(--spacing) * 0);
+  }
   .bottom-\[134px\] {
     bottom: 134px;
   }
   .left-0 {
     left: calc(var(--spacing) * 0);
   }
+  .mx-6 {
+    margin-inline: calc(var(--spacing) * 6);
+  }
   .mx-\[50px\] {
     margin-inline: 50px;
   }
   .mx-auto {
     margin-inline: auto;
+  }
+  .my-\[60px\] {
+    margin-block: 60px;
   }
   .mt-0 {
     margin-top: calc(var(--spacing) * 0);
@@ -206,14 +219,32 @@
   .mt-2 {
     margin-top: calc(var(--spacing) * 2);
   }
+  .mt-3 {
+    margin-top: calc(var(--spacing) * 3);
+  }
+  .mt-6 {
+    margin-top: calc(var(--spacing) * 6);
+  }
   .mt-\[30px\] {
     margin-top: 30px;
+  }
+  .mt-\[35px\] {
+    margin-top: 35px;
   }
   .mt-\[50px\] {
     margin-top: 50px;
   }
   .mt-\[60px\] {
     margin-top: 60px;
+  }
+  .mr-\[118px\] {
+    margin-right: 118px;
+  }
+  .mb-\[41px\] {
+    margin-bottom: 41px;
+  }
+  .ml-\[117px\] {
+    margin-left: 117px;
   }
   .contents {
     display: contents;
@@ -245,6 +276,12 @@
   .h-14 {
     height: calc(var(--spacing) * 14);
   }
+  .h-16 {
+    height: calc(var(--spacing) * 16);
+  }
+  .h-20 {
+    height: calc(var(--spacing) * 20);
+  }
   .h-\[20px\] {
     height: 20px;
   }
@@ -263,8 +300,17 @@
   .h-\[38px\] {
     height: 38px;
   }
+  .h-\[58px\] {
+    height: 58px;
+  }
+  .h-\[72px\] {
+    height: 72px;
+  }
   .h-\[297px\] {
     height: 297px;
+  }
+  .h-\[347px\] {
+    height: 347px;
   }
   .h-\[564px\] {
     height: 564px;
@@ -293,6 +339,12 @@
   .w-6 {
     width: calc(var(--spacing) * 6);
   }
+  .w-16 {
+    width: calc(var(--spacing) * 16);
+  }
+  .w-20 {
+    width: calc(var(--spacing) * 20);
+  }
   .w-\[17px\] {
     width: 17px;
   }
@@ -305,6 +357,9 @@
   .w-\[22px\] {
     width: 22px;
   }
+  .w-\[58px\] {
+    width: 58px;
+  }
   .w-\[104px\] {
     width: 104px;
   }
@@ -316,6 +371,12 @@
   }
   .w-\[226px\] {
     width: 226px;
+  }
+  .w-\[267px\] {
+    width: 267px;
+  }
+  .w-\[315px\] {
+    width: 315px;
   }
   .w-\[390px\] {
     width: 390px;
@@ -332,6 +393,9 @@
   .w-auto {
     width: auto;
   }
+  .w-fit {
+    width: fit-content;
+  }
   .w-full {
     width: 100%;
   }
@@ -346,6 +410,9 @@
   }
   .border-collapse {
     border-collapse: collapse;
+  }
+  .transform {
+    transform: var(--tw-rotate-x) var(--tw-rotate-y) var(--tw-rotate-z) var(--tw-skew-x) var(--tw-skew-y);
   }
   .cursor-pointer {
     cursor: pointer;
@@ -401,6 +468,14 @@
   .rounded-full {
     border-radius: calc(infinity * 1px);
   }
+  .rounded-t-xl {
+    border-top-left-radius: var(--radius-xl);
+    border-top-right-radius: var(--radius-xl);
+  }
+  .rounded-b-3xl {
+    border-bottom-right-radius: var(--radius-3xl);
+    border-bottom-left-radius: var(--radius-3xl);
+  }
   .border {
     border-style: var(--tw-border-style);
     border-width: 1px;
@@ -413,6 +488,12 @@
     --tw-border-style: dotted;
     border-style: dotted;
   }
+  .border-amber-500 {
+    border-color: var(--color-amber-500);
+  }
+  .border-green-500 {
+    border-color: var(--color-green-500);
+  }
   .border-red-500 {
     border-color: var(--color-red-500);
   }
@@ -424,6 +505,12 @@
   }
   .bg-primary {
     background-color: var(--primary);
+  }
+  .bg-primary\/15 {
+    background-color: var(--primary);
+    @supports (color: color-mix(in lab, red, red)) {
+      background-color: color-mix(in oklab, var(--primary) 15%, transparent);
+    }
   }
   .bg-red-100 {
     background-color: var(--color-red-100);
@@ -482,6 +569,9 @@
   .pl-7 {
     padding-left: calc(var(--spacing) * 7);
   }
+  .text-center {
+    text-align: center;
+  }
   .text-lg {
     font-size: var(--text-lg);
     line-height: var(--tw-leading, var(--text-lg--line-height));
@@ -491,6 +581,9 @@
   }
   .text-\[22px\] {
     font-size: 22px;
+  }
+  .text-\[28px\] {
+    font-size: 28px;
   }
   .leading-6 {
     --tw-leading: calc(var(--spacing) * 6);
@@ -508,6 +601,10 @@
     --tw-leading: 33px;
     line-height: 33px;
   }
+  .leading-\[42px\] {
+    --tw-leading: 42px;
+    line-height: 42px;
+  }
   .font-medium {
     --tw-font-weight: var(--font-weight-medium);
     font-weight: var(--font-weight-medium);
@@ -524,6 +621,9 @@
   }
   .text-star {
     color: var(--star);
+  }
+  .uppercase {
+    text-transform: uppercase;
   }
   .underline {
     text-decoration-line: underline;
@@ -573,6 +673,13 @@
   .focus-within\:ring-foreground {
     &:focus-within {
       --tw-ring-color: var(--foreground);
+    }
+  }
+  .hover\:bg-primary {
+    &:hover {
+      @media (hover: hover) {
+        background-color: var(--primary);
+      }
     }
   }
   .hover\:shadow-primary {
@@ -627,6 +734,31 @@
     font-family: "Poppins", sans-serif;
     color: var(--foreground);
   }
+}
+@property --tw-rotate-x {
+  syntax: "*";
+  inherits: false;
+  initial-value: rotateX(0);
+}
+@property --tw-rotate-y {
+  syntax: "*";
+  inherits: false;
+  initial-value: rotateY(0);
+}
+@property --tw-rotate-z {
+  syntax: "*";
+  inherits: false;
+  initial-value: rotateZ(0);
+}
+@property --tw-skew-x {
+  syntax: "*";
+  inherits: false;
+  initial-value: skewX(0);
+}
+@property --tw-skew-y {
+  syntax: "*";
+  inherits: false;
+  initial-value: skewY(0);
 }
 @property --tw-border-style {
   syntax: "*";
@@ -718,6 +850,11 @@
 @layer properties {
   @supports ((-webkit-hyphens: none) and (not (margin-trim: inline))) or ((-moz-orient: inline) and (not (color:rgb(from red r g b)))) {
     *, ::before, ::after, ::backdrop {
+      --tw-rotate-x: rotateX(0);
+      --tw-rotate-y: rotateY(0);
+      --tw-rotate-z: rotateZ(0);
+      --tw-skew-x: skewX(0);
+      --tw-skew-y: skewY(0);
       --tw-border-style: solid;
       --tw-leading: initial;
       --tw-font-weight: initial;
