@@ -18,6 +18,8 @@
   --color-secondary: var(--secondary);
   --color-muted: var(--muted);
   --color-star: var(--star);
+  --shadow-primary: 0 4px 10px 0 rgba(253, 200, 134, 0.8);
+  --shadow-secondary: 0 4px 10px 0 rgba(90, 79, 207, 0.1);
 }
 
 @layer base {

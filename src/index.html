@@ -8,7 +8,80 @@
     <link href="./output.css" rel="stylesheet" />
   </head>
   <body>
-    <h1 class="text-6xl font-bold">Hellow World!</h1>
+    <!-- Navbar -->
+    <header class="px-[50px] mt-[50px]">
+      <div class="flex justify-between items-center min-w-[1320px] h-14">
+        <nav>
+          <ul class="flex gap-[30px]">
+            <li class="group flex flex-col justify-between h-[28px]">
+              <a href="#" class="text-[16px] leading-[24px] font-medium"
+                >Home</a
+              >
+              <span
+                class="transition-all duration-300 h-0.5 w-full rounded-full bg-secondary opacity-0 group-hover:opacity-100"
+              ></span>
+            </li>
+            <li class="flex items-center h-[24px] cursor-pointer">
+              <button
+                type="button"
+                class="text-[16px] leading-[24px] font-medium cursor-pointer"
+              >
+                Category
+              </button>
+              <div class="flex items-center justify-center h-6 w-6 shrink-0">
+                <img
+                  src="./assets/images/icons/arrow_bottom.svg"
+                  alt=""
+                  class=""
+                />
+              </div>
+            </li>
+            <li class="group flex flex-col justify-between h-[28px]">
+              <a href="#" class="text-[16px] leading-[24px] font-medium"
+                >Services</a
+              >
+              <span
+                class="transition-all duration-300 h-0.5 w-full rounded-full bg-secondary opacity-0 group-hover:opacity-100"
+              ></span>
+            </li>
+            <li class="group flex flex-col justify-between h-[28px]">
+              <a href="#" class="text-[16px] leading-[24px] font-medium"
+                >About us</a
+              >
+              <span
+                class="transition-all duration-300 h-0.5 w-full rounded-full bg-secondary opacity-0 group-hover:opacity-100"
+              ></span>
+            </li>
+          </ul>
+        </nav>
+        <a href="./">
+          <img
+            src="./assets/images/icons/logo.svg"
+            alt=""
+            class="h-[38px] w-auto"
+          />
+        </a>
+        <div class="flex gap-5">
+          <form
+            class="group flex gap-2.5 py-4 pl-7 pr-14 bg-white rounded-[12px] transition-all duration-300 focus-within:ring focus-within:ring-foreground hover:ring hover:ring-foreground"
+          >
+            <div class="flex items-center justify-center h-6 w-6 shrink-0">
+              <img src="./assets/images/icons/search.svg" alt="" class="" />
+            </div>
+            <input
+              type="text"
+              class="w-[204px] text-[16px] font-medium leading-6 placeholder-muted group-hover:outline-none focus:outline-none"
+              placeholder="Search your favorite food"
+            />
+          </form>
+          <a
+            href="#"
+            class="w-[104px] h-14 flex items-center justify-center bg-secondary/10 text-secondary text-[16px] font-semibold leading-6 rounded-[12px] transition-all duration-300 hover:shadow-secondary"
+            >Log In</a
+          >
+        </div>
+      </div>
+    </header>
 
     <script src="./js/main.js"></script>
   </body>
