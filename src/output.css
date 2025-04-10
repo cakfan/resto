@@ -173,6 +173,9 @@
   .mt-\[50px\] {
     margin-top: 50px;
   }
+  .mt-\[60px\] {
+    margin-top: 60px;
+  }
   .contents {
     display: contents;
   }
@@ -287,6 +290,9 @@
   }
   .px-\[50px\] {
     padding-inline: 50px;
+  }
+  .px-\[60px\] {
+    padding-inline: 60px;
   }
   .py-4 {
     padding-block: calc(var(--spacing) * 4);
