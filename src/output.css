@@ -195,6 +195,9 @@
   .left-0 {
     left: calc(var(--spacing) * 0);
   }
+  .m-\[60px\] {
+    margin: 60px;
+  }
   .mx-6 {
     margin-inline: calc(var(--spacing) * 6);
   }
@@ -402,6 +405,9 @@
   .min-w-\[1320px\] {
     min-width: 1320px;
   }
+  .min-w-\[1440px\] {
+    min-width: 1440px;
+  }
   .flex-shrink {
     flex-shrink: 1;
   }
@@ -532,6 +538,9 @@
   }
   .object-cover {
     object-fit: cover;
+  }
+  .p-\[60px\] {
+    padding: 60px;
   }
   .\!px-\[60px\] {
     padding-inline: 60px !important;
