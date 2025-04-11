@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", () => {
       experience: "8 Years",
       restaurant: "Green Garden",
       restaurantImage: "./assets/images/thumbnails/resto-3.png",
-      chefImage: "./assets/images/thumbnails/chef-2.jpg",
+      chefImage: "./assets/images/thumbnails/chef-2.webp",
     },
     {
       chefName: "Asep Vandal",
@@ -25,7 +25,7 @@ document.addEventListener("DOMContentLoaded", () => {
       experience: "10 Years",
       restaurant: "Sundanese Delight",
       restaurantImage: "./assets/images/thumbnails/resto-2.png",
-      chefImage: "./assets/images/thumbnails/chef-3.jpg",
+      chefImage: "./assets/images/thumbnails/chef-3.webp",
     },
     {
       chefName: "I Made Invoker",
@@ -34,7 +34,7 @@ document.addEventListener("DOMContentLoaded", () => {
       experience: "15 Years",
       restaurant: "Bali Bistro",
       restaurantImage: "./assets/images/thumbnails/resto-1.png",
-      chefImage: "./assets/images/thumbnails/chef-4.jpg",
+      chefImage: "./assets/images/thumbnails/chef-4.webp",
     },
   ];
 
@@ -48,8 +48,8 @@ document.addEventListener("DOMContentLoaded", () => {
     const chefNameElement = document.querySelector(".tab-content h2");
     if (chefNameElement) chefNameElement.textContent = selectedContent.chefName;
 
-    const locationElement = document.querySelector(".tab-content .text-muted");
-    if (locationElement) locationElement.textContent = selectedContent.location;
+    // const locationElement = document.querySelector(".tab-content .text-muted");
+    // if (locationElement) locationElement.textContent = selectedContent.location;
 
     const experienceElement = document.querySelector(".experience-years");
     if (experienceElement)
@@ -68,15 +68,21 @@ document.addEventListener("DOMContentLoaded", () => {
 
   function setActiveTab(index) {
     tabs.forEach((tab) => {
-      tab.style.backgroundColor = "";
+      tab.classList.remove("bg-white");
       const profileDetailsLink = tab.querySelector("a");
-      if (profileDetailsLink) profileDetailsLink.classList.add("hidden");
+      if (profileDetailsLink) {
+        profileDetailsLink.classList.remove("flex");
+        profileDetailsLink.classList.add("hidden");
+      }
     });
 
     const activeTab = tabs[index];
-    activeTab.style.backgroundColor = "white";
+    activeTab.classList.add("bg-white");
     const profileDetailsLink = activeTab.querySelector("a");
-    if (profileDetailsLink) profileDetailsLink.classList.remove("hidden");
+    if (profileDetailsLink) {
+      profileDetailsLink.classList.remove("hidden");
+      profileDetailsLink.classList.add("flex");
+    }
   }
 
   tabs.forEach((tab, index) => {
