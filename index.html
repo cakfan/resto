@@ -91,7 +91,7 @@
 
     <main>
       <!-- Ads Section -->
-      <section class="relative w-full overflow-hidden">
+      <section class="relative w-full max-w-[1440px] overflow-visible mx-auto">
         <div class="swiper !px-[60px]">
           <div class="swiper-wrapper flex py-[60px]">
             <!-- Item 1 -->
@@ -392,8 +392,10 @@
             </a>
           </div>
           <div class="ml-[85px] flex gap-5">
+            <!-- Card 1 -->
             <div
-              class="relative h-[475px] w-[400px] rounded-3xl overflow-clip shrink-0"
+              class="card group transition-all duration-300 relative h-[475px] w-[400px] rounded-3xl overflow-clip shrink-0 hover:w-[400px]"
+              data-card="1"
             >
               <img
                 src="./assets/images/thumbnails/resto-1.png"
@@ -401,7 +403,7 @@
                 class="object-cover w-full h-full"
               />
               <div
-                class="flex gap-2 p-6 items-center absolute left-6 bottom-6 right-6 bg-white rounded-3xl"
+                class="card-info transition-all duration-300 delay-1000 ease-in-out flex gap-2 p-6 items-center absolute left-6 bottom-6 right-6 bg-white rounded-3xl"
               >
                 <div class="flex flex-col gap-1 w-[260px]">
                   <div class="flex items-center">
@@ -445,19 +447,117 @@
                 </a>
               </div>
             </div>
-            <div class="h-[475px] w-[214px] rounded-3xl overflow-clip">
+
+            <!-- Card 2 -->
+            <div
+              class="card group transition-all duration-300 relative h-[475px] w-[214px] rounded-3xl overflow-clip shrink-0 hover:w-[400px]"
+              data-card="2"
+            >
               <img
                 src="./assets/images/thumbnails/resto-2.png"
                 alt=""
                 class="object-cover h-full w-full"
               />
+              <div
+                class="card-info transition-all duration-300 delay-1000 ease-in-out gap-2 p-6 items-center absolute left-6 bottom-6 right-6 bg-white rounded-3xl hidden"
+              >
+                <div class="flex flex-col gap-1 w-[260px]">
+                  <div class="flex items-center">
+                    <div class="flex h-6 w-5 mt-1">
+                      <img
+                        src="./assets/images/icons/star.svg"
+                        alt=""
+                        class="h-4 w-4"
+                      />
+                    </div>
+                    <p
+                      class="text-[16px] leading-6 font-semibold text-star mr-1"
+                    >
+                      4.8
+                    </p>
+                    <p class="text-[16px] leading-6 text-muted">(5.2K+)</p>
+                  </div>
+                  <h3 class="text-lg leading-[27px] font-semibold">
+                    Green Garden
+                  </h3>
+                  <div class="flex gap-1.5">
+                    <img
+                      src="./assets/images/icons/Location.svg"
+                      alt=""
+                      class="h-6 w-6"
+                    />
+                    <p class="text-[16px] leading-6 text-muted">
+                      Bandung, Indonesia
+                    </p>
+                  </div>
+                </div>
+                <a
+                  href="#"
+                  class="flex items-center justify-center h-9 w-9 rounded-xl bg-primary shrink-0"
+                >
+                  <img
+                    src="./assets/images/icons/sign_right.svg"
+                    alt=""
+                    class=""
+                  />
+                </a>
+              </div>
             </div>
-            <div class="h-[475px] w-[214px] rounded-3xl overflow-clip">
+
+            <!-- Card 3 -->
+            <div
+              class="card group transition-all duration-300 relative h-[475px] w-[214px] rounded-3xl overflow-clip shrink-0 hover:w-[400px]"
+              data-card="3"
+            >
               <img
                 src="./assets/images/thumbnails/resto-3.png"
                 alt=""
                 class="object-cover h-full w-full"
               />
+              <div
+                class="card-info transition-all duration-300 delay-1000 ease-in-out gap-2 p-6 items-center absolute left-6 bottom-6 right-6 bg-white rounded-3xl hidden"
+              >
+                <div class="flex flex-col gap-1 w-[260px]">
+                  <div class="flex items-center">
+                    <div class="flex h-6 w-5 mt-1">
+                      <img
+                        src="./assets/images/icons/star.svg"
+                        alt=""
+                        class="h-4 w-4"
+                      />
+                    </div>
+                    <p
+                      class="text-[16px] leading-6 font-semibold text-star mr-1"
+                    >
+                      4.9
+                    </p>
+                    <p class="text-[16px] leading-6 text-muted">(6.8K+)</p>
+                  </div>
+                  <h3 class="text-lg leading-[27px] font-semibold">
+                    Sundanese Delight
+                  </h3>
+                  <div class="flex gap-1.5">
+                    <img
+                      src="./assets/images/icons/Location.svg"
+                      alt=""
+                      class="h-6 w-6"
+                    />
+                    <p class="text-[16px] leading-6 text-muted">
+                      Sunda, Indonesia
+                    </p>
+                  </div>
+                </div>
+                <a
+                  href="#"
+                  class="flex items-center justify-center h-9 w-9 rounded-xl bg-primary shrink-0"
+                >
+                  <img
+                    src="./assets/images/icons/sign_right.svg"
+                    alt=""
+                    class=""
+                  />
+                </a>
+              </div>
             </div>
           </div>
         </div>
@@ -736,7 +836,7 @@
             <div class="tab-menu flex flex-col gap-5">
               <!-- Tab item 1 -->
               <div
-                class="tab-item p-6 flex flex-col gap-1.5 h-[141px] w-[596px] rounded-3xl cursor-pointer transition-all duration-300 hover:bg-white"
+                class="tab-item p-6 flex flex-col gap-1.5 h-[141px] w-[596px] rounded-3xl group transition-all duration-300 hover:bg-white"
               >
                 <span
                   class="text-[16px] leading-6 font-medium text-muted uppercase"
@@ -778,7 +878,7 @@
 
               <!-- Tab item 2 -->
               <div
-                class="tab-item p-6 flex flex-col gap-1.5 h-[141px] w-[596px] rounded-3xl cursor-pointer transition-all duration-300 hover:bg-white"
+                class="tab-item p-6 flex flex-col gap-1.5 h-[141px] w-[596px] rounded-3xl group transition-all duration-300 hover:bg-white"
               >
                 <span
                   class="text-[16px] leading-6 font-medium text-muted uppercase"
@@ -820,7 +920,7 @@
 
               <!-- Tab item 3 -->
               <div
-                class="tab-item p-6 flex flex-col gap-1.5 h-[141px] w-[596px] rounded-3xl cursor-pointer transition-all duration-300 hover:bg-white"
+                class="tab-item p-6 flex flex-col gap-1.5 h-[141px] w-[596px] rounded-3xl group transition-all duration-300 hover:bg-white"
               >
                 <span
                   class="text-[16px] leading-6 font-medium text-muted uppercase"
@@ -862,7 +962,7 @@
 
               <!-- Tab item 4 -->
               <div
-                class="tab-item p-6 flex flex-col gap-1.5 h-[141px] w-[596px] rounded-3xl cursor-pointer transition-all duration-300 hover:bg-white"
+                class="tab-item p-6 flex flex-col gap-1.5 h-[141px] w-[596px] rounded-3xl group transition-all duration-300 hover:bg-white"
               >
                 <span
                   class="text-[16px] leading-6 font-medium text-muted uppercase"
