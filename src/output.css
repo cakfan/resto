@@ -8,6 +8,8 @@
       "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
+    --color-red-500: oklch(63.7% 0.237 25.331);
+    --color-green-500: oklch(72.3% 0.219 149.579);
     --color-gray-100: oklch(96.7% 0.003 264.542);
     --color-white: #fff;
     --spacing: 0.25rem;
@@ -227,6 +229,21 @@
   .mx-auto {
     margin-inline: auto;
   }
+  .-mt-0 {
+    margin-top: calc(var(--spacing) * -0);
+  }
+  .-mt-0\.5 {
+    margin-top: calc(var(--spacing) * -0.5);
+  }
+  .-mt-\[3\.5px\] {
+    margin-top: calc(3.5px * -1);
+  }
+  .-mt-\[3\] {
+    margin-top: calc(3 * -1);
+  }
+  .-mt-\[3px\] {
+    margin-top: calc(3px * -1);
+  }
   .mt-1 {
     margin-top: calc(var(--spacing) * 1);
   }
@@ -262,6 +279,12 @@
   }
   .mr-1 {
     margin-right: calc(var(--spacing) * 1);
+  }
+  .mr-\[3px\] {
+    margin-right: 3px;
+  }
+  .mr-\[7px\] {
+    margin-right: 7px;
   }
   .mr-\[118px\] {
     margin-right: 118px;
@@ -392,6 +415,9 @@
   .h-\[848px\] {
     height: 848px;
   }
+  .h-auto {
+    height: auto;
+  }
   .h-full {
     height: 100%;
   }
@@ -418,6 +444,9 @@
   }
   .w-20 {
     width: calc(var(--spacing) * 20);
+  }
+  .w-\[18px\] {
+    width: 18px;
   }
   .w-\[21px\] {
     width: 21px;
@@ -569,6 +598,15 @@
   .gap-8 {
     gap: calc(var(--spacing) * 8);
   }
+  .gap-\[3px\] {
+    gap: 3px;
+  }
+  .gap-\[6\.5px\] {
+    gap: 6.5px;
+  }
+  .gap-\[7px\] {
+    gap: 7px;
+  }
   .gap-\[30px\] {
     gap: 30px;
   }
@@ -610,6 +648,20 @@
   .border {
     border-style: var(--tw-border-style);
     border-width: 1px;
+  }
+  .border-dashed {
+    --tw-border-style: dashed;
+    border-style: dashed;
+  }
+  .border-dotted {
+    --tw-border-style: dotted;
+    border-style: dotted;
+  }
+  .border-green-500 {
+    border-color: var(--color-green-500);
+  }
+  .border-red-500 {
+    border-color: var(--color-red-500);
   }
   .bg-\[\#FFF7ED\] {
     background-color: #FFF7ED;
@@ -695,6 +747,9 @@
   .py-6 {
     padding-block: calc(var(--spacing) * 6);
   }
+  .py-\[3\.5px\] {
+    padding-block: 3.5px;
+  }
   .py-\[30px\] {
     padding-block: 30px;
   }
@@ -703,6 +758,12 @@
   }
   .pr-2 {
     padding-right: calc(var(--spacing) * 2);
+  }
+  .pr-\[3px\] {
+    padding-right: 3px;
+  }
+  .pr-\[7px\] {
+    padding-right: 7px;
   }
   .pr-\[140px\] {
     padding-right: 140px;
