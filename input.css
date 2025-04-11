@@ -19,6 +19,7 @@
   --color-muted: var(--muted);
   --color-star: var(--star);
   --drop-shadow-custom: 8px 8px 25px rgba(102, 102, 102, 0.04);
+  --drop-shadow-custom2: -8px 8px 25px rgba(102, 102, 102, 0.04);
   --shadow-primary: 0 4px 10px 0 rgba(253, 200, 134, 0.8);
   --shadow-secondary: 0 4px 10px 0 rgba(90, 79, 207, 0.1);
 }
