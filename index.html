@@ -19,6 +19,7 @@
       <div class="flex justify-between items-center min-w-[1320px] h-14">
         <nav>
           <ul class="flex gap-[30px]">
+            <!-- Home -->
             <li class="group flex flex-col justify-between h-[28px]">
               <a href="#" class="text-[16px] leading-[24px] font-medium"
                 >Home</a
@@ -27,21 +28,55 @@
                 class="transition-all duration-300 h-0.5 w-full rounded-full bg-secondary opacity-0 group-hover:opacity-100"
               ></span>
             </li>
-            <li class="flex items-center h-[24px] cursor-pointer">
-              <button
-                type="button"
-                class="text-[16px] leading-[24px] font-medium cursor-pointer"
-              >
-                Category
-              </button>
-              <div class="flex items-center justify-center h-6 w-6 shrink-0">
-                <img
-                  src="./assets/images/icons/arrow_bottom.svg"
-                  alt=""
-                  class=""
-                />
+
+            <!-- Category Dropdown -->
+            <li class="dropdown relative flex flex-col cursor-pointer">
+              <div class="flex items-center h-6 w-full">
+                <button
+                  type="button"
+                  class="dropdown-button text-[16px] leading-[24px] font-medium cursor-pointer w-full text-left"
+                >
+                  Category
+                </button>
+                <div class="flex items-center justify-center h-6 w-6 shrink-0">
+                  <img
+                    src="./assets/images/icons/arrow_bottom.svg"
+                    alt=""
+                    class="dropdown-arrow transition-transform duration-300"
+                  />
+                </div>
               </div>
+              <ul
+                class="dropdown-menu z-50 opacity-0 flex transition-all duration-300 absolute top-full left-0 mt-2 min-w-[150px] flex-col gap-1.5 bg-white rounded-xl py-2.5 shadow-lg"
+              >
+                <li class="group">
+                  <a
+                    href="#"
+                    class="block py-1.5 px-5 text-[16px] leading-[24px] font-medium transition-all duration-300 hover:bg-secondary/5"
+                  >
+                    Foods
+                  </a>
+                </li>
+                <li class="group">
+                  <a
+                    href="#"
+                    class="block py-1.5 px-5 text-[16px] leading-[24px] font-medium transition-all duration-300 hover:bg-secondary/5"
+                  >
+                    Drinks
+                  </a>
+                </li>
+                <li class="group">
+                  <a
+                    href="#"
+                    class="block py-1.5 px-5 text-[16px] leading-[24px] font-medium transition-all duration-300 hover:bg-secondary/5"
+                  >
+                    Desserts
+                  </a>
+                </li>
+              </ul>
             </li>
+
+            <!-- Services -->
             <li class="group flex flex-col justify-between h-[28px]">
               <a href="#" class="text-[16px] leading-[24px] font-medium"
                 >Services</a
@@ -50,6 +85,8 @@
                 class="transition-all duration-300 h-0.5 w-full rounded-full bg-secondary opacity-0 group-hover:opacity-100"
               ></span>
             </li>
+
+            <!-- About Us -->
             <li class="group flex flex-col justify-between h-[28px]">
               <a href="#" class="text-[16px] leading-[24px] font-medium"
                 >About us</a
@@ -60,6 +97,8 @@
             </li>
           </ul>
         </nav>
+
+        <!-- Logo -->
         <a href="./">
           <img
             src="./assets/images/icons/logo.svg"
@@ -67,24 +106,27 @@
             class="h-[38px] w-auto"
           />
         </a>
+
+        <!-- Search and Login -->
         <div class="flex gap-5">
           <form
-            class="group flex gap-2.5 py-4 pl-7 pr-14 bg-white rounded-[12px] transition-all duration-300 focus-within:ring focus-within:ring-foreground hover:ring hover:ring-foreground"
+            class="group flex gap-2.5 py-4 px-7 bg-white rounded-[12px] transition-all duration-300 focus-within:ring-2 focus-within:ring-secondary hover:ring-2 hover:ring-secondary"
           >
             <div class="flex items-center justify-center h-6 w-6 shrink-0">
               <img src="./assets/images/icons/search.svg" alt="" class="" />
             </div>
             <input
               type="text"
-              class="w-[204px] text-[16px] font-medium leading-6 placeholder-muted group-hover:outline-none focus:outline-none"
+              class="w-[204px] text-[16px] font-medium leading-6 placeholder-placeholder group-hover:outline-none focus:outline-none"
               placeholder="Search your favorite food"
             />
           </form>
           <a
             href="#"
             class="w-[104px] h-14 flex items-center justify-center bg-secondary/10 text-secondary text-[16px] font-semibold leading-6 rounded-[12px] transition-all duration-300 hover:shadow-secondary"
-            >Log In</a
           >
+            Log In
+          </a>
         </div>
       </div>
     </header>
@@ -97,7 +139,7 @@
             <!-- Item 1 -->
             <div class="swiper-slide relative !w-[1208px] !h-[564px]">
               <div
-                class="absolute right-0 w-[1128px] h-[564px] rounded-[24px] overflow-clip"
+                class="absolute right-0 w-[1128px] h-[564px] rounded-3xl overflow-clip"
               >
                 <img
                   src="./assets/images/thumbnails/ads-1.png"
@@ -106,45 +148,35 @@
                 />
               </div>
               <div
-                class="absolute flex flex-col gap-1 left-0 top-[133px] bottom-[134px] h-[297px] w-[390px] rounded-[24px] bg-white pl-6 py-6 pr-[140px]"
+                class="absolute flex flex-col gap-1 left-0 top-[133px] bottom-[134px] h-[297px] w-[390px] rounded-3xl bg-white pl-6 py-6 pr-[140px]"
               >
                 <div class="flex items-center h-[27px] w-[210px]">
-                  <div class="flex items-center">
-                    <div class="flex h-6 w-[21px] mt-1 justify-center">
-                      <img
-                        src="./assets/images/icons/star.svg"
-                        alt=""
-                        class="h-4 w-4"
-                      />
-                    </div>
-                    <div class="flex h-6 w-[21px] mt-1 justify-center">
-                      <img
-                        src="./assets/images/icons/star.svg"
-                        alt=""
-                        class="h-4 w-4"
-                      />
-                    </div>
-                    <div class="flex h-6 w-[21px] mt-1 justify-center">
-                      <img
-                        src="./assets/images/icons/star.svg"
-                        alt=""
-                        class="h-4 w-4"
-                      />
-                    </div>
-                    <div class="flex h-6 w-[21px] mt-1 justify-center">
-                      <img
-                        src="./assets/images/icons/star.svg"
-                        alt=""
-                        class="h-4 w-4"
-                      />
-                    </div>
-                    <div class="flex h-6 w-[21px] mt-1 justify-center">
-                      <img
-                        src="./assets/images/icons/star.svg"
-                        alt=""
-                        class="h-4 w-4"
-                      />
-                    </div>
+                  <div class="flex gap-[6.5px] -mt-[3px] pr-[3px]">
+                    <img
+                      src="./assets/images/icons/star.svg"
+                      alt=""
+                      class="w-[18px] shrink-0"
+                    />
+                    <img
+                      src="./assets/images/icons/star.svg"
+                      alt=""
+                      class="w-[18px] shrink-0"
+                    />
+                    <img
+                      src="./assets/images/icons/star.svg"
+                      alt=""
+                      class="w-[18px] shrink-0"
+                    />
+                    <img
+                      src="./assets/images/icons/star.svg"
+                      alt=""
+                      class="w-[18px] shrink-0"
+                    />
+                    <img
+                      src="./assets/images/icons/star.svg"
+                      alt=""
+                      class="w-[18px] shrink-0"
+                    />
                   </div>
                   <div class="flex gap-1 items-center">
                     <p class="text-lg leading-[27px] font-semibold text-star">
@@ -199,7 +231,7 @@
 
             <!-- Item 2 -->
             <div class="swiper-slide !w-[1128px] !h-[564px]">
-              <div class="w-[1128px] h-[564px] rounded-[24px] overflow-clip">
+              <div class="w-[1128px] h-[564px] rounded-3xl overflow-clip">
                 <img
                   src="./assets/images/thumbnails/ads-2.png"
                   alt=""
@@ -227,7 +259,7 @@
           </div>
           <div class="flex w-full gap-5">
             <!-- Item 1 -->
-            <div class="relative h-[347px] w-[315px] bg-white rounded-[24px]">
+            <div class="relative h-[347px] w-[315px] bg-white rounded-3xl">
               <div
                 class="mt-6 ml-[117px] mr-[118px] flex items-center justify-center h-20 w-20 rounded-full bg-primary/15"
               >
@@ -259,7 +291,7 @@
             </div>
 
             <!-- Item 2 -->
-            <div class="relative h-[347px] w-[315px] bg-white rounded-[24px]">
+            <div class="relative h-[347px] w-[315px] bg-white rounded-3xl">
               <div
                 class="mt-6 ml-[117px] mr-[118px] flex items-center justify-center h-20 w-20 rounded-full bg-primary/15"
               >
@@ -291,9 +323,9 @@
             </div>
 
             <!-- Item 3 -->
-            <div class="relative h-[347px] w-[315px] bg-white rounded-[24px]">
+            <div class="relative h-[347px] w-[315px] bg-white rounded-3xl">
               <div
-                class="mt-6 ml-[117px] mr-[118px] flex items-center justify-center h-16 w-16 rounded-full bg-primary/15"
+                class="mt-6 ml-[117px] mr-[118px] flex items-center justify-center h-20 w-20 rounded-full bg-primary/15"
               >
                 <img
                   src="./assets/images/icons/cost.svg"
@@ -301,9 +333,7 @@
                   class="h-[58px] w-[58px]"
                 />
               </div>
-              <h3
-                class="mt-[35px] text-lg leading-[27px] font-semibold text-center"
-              >
+              <h3 class="mt-6 text-lg leading-[27px] font-semibold text-center">
                 No Extra Fee
               </h3>
               <p
@@ -325,9 +355,9 @@
             </div>
 
             <!-- Item 4 -->
-            <div class="relative h-[347px] w-[315px] bg-white rounded-[24px]">
+            <div class="relative h-[347px] w-[315px] bg-white rounded-3xl">
               <div
-                class="mt-6 ml-[117px] mr-[118px] flex items-center justify-center h-16 w-16 rounded-full bg-primary/15"
+                class="mt-6 ml-[117px] mr-[118px] flex items-center justify-center h-20 w-20 rounded-full bg-primary/15"
               >
                 <img
                   src="./assets/images/icons/sparkle.svg"
@@ -335,9 +365,7 @@
                   class="h-[58px] w-[58px]"
                 />
               </div>
-              <h3
-                class="mt-[35px] text-lg leading-[27px] font-semibold text-center"
-              >
+              <h3 class="mt-6 text-lg leading-[27px] font-semibold text-center">
                 Guaranteed Cleanliness
               </h3>
               <p
@@ -407,13 +435,11 @@
               >
                 <div class="flex flex-col gap-1 w-[260px]">
                   <div class="flex items-center">
-                    <div class="flex h-6 w-5 mt-1">
-                      <img
-                        src="./assets/images/icons/star.svg"
-                        alt=""
-                        class="h-4 w-4"
-                      />
-                    </div>
+                    <img
+                      src="./assets/images/icons/star.svg"
+                      alt=""
+                      class="h-auto w-[18px] -mt-[3px] mr-[3px]"
+                    />
                     <p
                       class="text-[16px] leading-6 font-semibold text-star mr-1"
                     >
@@ -463,13 +489,11 @@
               >
                 <div class="flex flex-col gap-1 w-[260px]">
                   <div class="flex items-center">
-                    <div class="flex h-6 w-5 mt-1">
-                      <img
-                        src="./assets/images/icons/star.svg"
-                        alt=""
-                        class="h-4 w-4"
-                      />
-                    </div>
+                    <img
+                      src="./assets/images/icons/star.svg"
+                      alt=""
+                      class="h-auto w-[18px] -mt-[3px] mr-[3px]"
+                    />
                     <p
                       class="text-[16px] leading-6 font-semibold text-star mr-1"
                     >
@@ -519,13 +543,11 @@
               >
                 <div class="flex flex-col gap-1 w-[260px]">
                   <div class="flex items-center">
-                    <div class="flex h-6 w-5 mt-1">
-                      <img
-                        src="./assets/images/icons/star.svg"
-                        alt=""
-                        class="h-4 w-4"
-                      />
-                    </div>
+                    <img
+                      src="./assets/images/icons/star.svg"
+                      alt=""
+                      class="h-auto w-[18px] -mt-[3px] mr-[3px]"
+                    />
                     <p
                       class="text-[16px] leading-6 font-semibold text-star mr-1"
                     >
@@ -578,22 +600,80 @@
                 Restaurant Near You
               </h2>
             </div>
-            <div
-              class="flex gap-1.5 px-6 py-5 items-center h-[64px] w-[252px] rounded-xl bg-[#f2f2f2]"
-            >
-              <img src="./assets/images/icons/Location.svg" alt="" class="" />
-              <div class="flex">
-                <p class="text-[16px] leading-6 font-medium text-muted">
-                  Jakarta, Indonesia
-                </p>
-                <div class="flex items-center justify-center h-6 w-6">
-                  <img
-                    src="./assets/images/icons/arrow_bottom.svg"
-                    alt=""
-                    class=""
-                  />
+            <div class="relative dropdown flex flex-col">
+              <button
+                type="button"
+                class="dropdown-button flex cursor-pointer gap-1.5 px-6 py-5 items-center h-[64px] w-[252px] rounded-xl bg-[#f2f2f2]"
+              >
+                <img src="./assets/images/icons/Location.svg" alt="" class="" />
+                <div class="flex">
+                  <p class="text-[16px] leading-6 font-medium text-muted">
+                    Jakarta, Indonesia
+                  </p>
+                  <div class="flex items-center justify-center h-6 w-6">
+                    <img
+                      src="./assets/images/icons/arrow_bottom.svg"
+                      alt=""
+                      class="dropdown-arrow transition-all duration-300"
+                    />
+                  </div>
                 </div>
-              </div>
+              </button>
+              <ul
+                class="dropdown-menu z-50 opacity-0 transition-all duration-300 absolute top-full left-0 mt-2 min-w-[150px] flex-col gap-1.5 bg-white rounded-xl py-2.5 shadow-lg"
+              >
+                <li class="group">
+                  <button
+                    type="button"
+                    class="flex cursor-pointer gap-1.5 px-6 py-5 items-center h-[64px] w-[252px] transition-all duration-300 hover:bg-[#f2f2f2]"
+                  >
+                    <img
+                      src="./assets/images/icons/Location.svg"
+                      alt=""
+                      class=""
+                    />
+                    <div class="flex">
+                      <p class="text-[16px] leading-6 font-medium text-muted">
+                        Bandung, Indonesia
+                      </p>
+                    </div>
+                  </button>
+                </li>
+                <li class="group">
+                  <button
+                    type="button"
+                    class="flex cursor-pointer gap-1.5 px-6 py-5 items-center h-[64px] w-[252px] transition-all duration-300 hover:bg-[#f2f2f2]"
+                  >
+                    <img
+                      src="./assets/images/icons/Location.svg"
+                      alt=""
+                      class=""
+                    />
+                    <div class="flex">
+                      <p class="text-[16px] leading-6 font-medium text-muted">
+                        Bandung, Indonesia
+                      </p>
+                    </div>
+                  </button>
+                </li>
+                <li class="group">
+                  <button
+                    type="button"
+                    class="flex cursor-pointer gap-1.5 px-6 py-5 items-center h-[64px] w-[252px] transition-all duration-300 hover:bg-[#f2f2f2]"
+                  >
+                    <img
+                      src="./assets/images/icons/Location.svg"
+                      alt=""
+                      class=""
+                    />
+                    <div class="flex">
+                      <p class="text-[16px] leading-6 font-medium text-muted">
+                        Jember, Indonesia
+                      </p>
+                    </div>
+                  </button>
+                </li>
+              </ul>
             </div>
           </div>
           <div class="flex gap-5">
@@ -611,13 +691,11 @@
               >
                 <div class="flex flex-col gap-1 w-[260px]">
                   <div class="flex items-center">
-                    <div class="flex h-6 w-5 mt-1">
-                      <img
-                        src="./assets/images/icons/star.svg"
-                        alt=""
-                        class="h-4 w-4"
-                      />
-                    </div>
+                    <img
+                      src="./assets/images/icons/star.svg"
+                      alt=""
+                      class="w-[18px] -mt-[3.5px] mr-[3px]"
+                    />
                     <p
                       class="text-[16px] leading-6 font-semibold text-star mr-1"
                     >
@@ -658,13 +736,11 @@
               >
                 <div class="flex flex-col gap-1 w-[260px]">
                   <div class="flex items-center">
-                    <div class="flex h-6 w-5 mt-1">
-                      <img
-                        src="./assets/images/icons/star.svg"
-                        alt=""
-                        class="h-4 w-4"
-                      />
-                    </div>
+                    <img
+                      src="./assets/images/icons/star.svg"
+                      alt=""
+                      class="w-[18px] -mt-[3.5px] mr-[3px]"
+                    />
                     <p
                       class="text-[16px] leading-6 font-semibold text-star mr-1"
                     >
@@ -705,13 +781,11 @@
               >
                 <div class="flex flex-col gap-1 w-[260px]">
                   <div class="flex items-center">
-                    <div class="flex h-6 w-5 mt-1">
-                      <img
-                        src="./assets/images/icons/star.svg"
-                        alt=""
-                        class="h-4 w-4"
-                      />
-                    </div>
+                    <img
+                      src="./assets/images/icons/star.svg"
+                      alt=""
+                      class="w-[18px] -mt-[3.5px] mr-[3px]"
+                    />
                     <p
                       class="text-[16px] leading-6 font-semibold text-star mr-1"
                     >
@@ -1024,5 +1098,8 @@
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="./js/main.js"></script>
+    <script src="./js/tab.js"></script>
+    <script src="./js/card.js"></script>
+    <script src="./js/dropdown.js"></script>
   </body>
 </html>
