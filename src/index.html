@@ -34,8 +34,7 @@
               <div class="flex items-center h-6 w-full">
                 <button
                   type="button"
-                  class="text-[16px] leading-[24px] font-medium cursor-pointer w-full text-left"
-                  id="dropdown-button"
+                  class="dropdown-button text-[16px] leading-[24px] font-medium cursor-pointer w-full text-left"
                 >
                   Category
                 </button>
@@ -43,21 +42,19 @@
                   <img
                     src="./assets/images/icons/arrow_bottom.svg"
                     alt=""
-                    class="transition-transform duration-300"
-                    id="dropdown-arrow"
+                    class="dropdown-arrow transition-transform duration-300"
                   />
                 </div>
               </div>
               <ul
-                class="z-50 hidden absolute top-full left-0 mt-2 min-w-[150px] flex-col gap-1.5 bg-white rounded-xl py-2.5 shadow-lg"
-                id="dropdown-menu"
+                class="dropdown-menu z-50 opacity-0 flex transition-all duration-300 absolute top-full left-0 mt-2 min-w-[150px] flex-col gap-1.5 bg-white rounded-xl py-2.5 shadow-lg"
               >
                 <li class="group">
                   <a
                     href="#"
                     class="block py-1.5 px-5 text-[16px] leading-[24px] font-medium transition-all duration-300 hover:bg-secondary/5"
                   >
-                    Food
+                    Foods
                   </a>
                 </li>
                 <li class="group">
@@ -623,22 +620,80 @@
                 Restaurant Near You
               </h2>
             </div>
-            <div
-              class="flex gap-1.5 px-6 py-5 items-center h-[64px] w-[252px] rounded-xl bg-[#f2f2f2]"
-            >
-              <img src="./assets/images/icons/Location.svg" alt="" class="" />
-              <div class="flex">
-                <p class="text-[16px] leading-6 font-medium text-muted">
-                  Jakarta, Indonesia
-                </p>
-                <div class="flex items-center justify-center h-6 w-6">
-                  <img
-                    src="./assets/images/icons/arrow_bottom.svg"
-                    alt=""
-                    class=""
-                  />
+            <div class="relative dropdown flex flex-col">
+              <button
+                type="button"
+                class="dropdown-button flex cursor-pointer gap-1.5 px-6 py-5 items-center h-[64px] w-[252px] rounded-xl bg-[#f2f2f2]"
+              >
+                <img src="./assets/images/icons/Location.svg" alt="" class="" />
+                <div class="flex">
+                  <p class="text-[16px] leading-6 font-medium text-muted">
+                    Jakarta, Indonesia
+                  </p>
+                  <div class="flex items-center justify-center h-6 w-6">
+                    <img
+                      src="./assets/images/icons/arrow_bottom.svg"
+                      alt=""
+                      class="dropdown-arrow transition-all duration-300"
+                    />
+                  </div>
                 </div>
-              </div>
+              </button>
+              <ul
+                class="dropdown-menu z-50 opacity-0 transition-all duration-300 absolute top-full left-0 mt-2 min-w-[150px] flex-col gap-1.5 bg-white rounded-xl py-2.5 shadow-lg"
+              >
+                <li class="group">
+                  <button
+                    type="button"
+                    class="flex cursor-pointer gap-1.5 px-6 py-5 items-center h-[64px] w-[252px] transition-all duration-300 hover:bg-[#f2f2f2]"
+                  >
+                    <img
+                      src="./assets/images/icons/Location.svg"
+                      alt=""
+                      class=""
+                    />
+                    <div class="flex">
+                      <p class="text-[16px] leading-6 font-medium text-muted">
+                        Bandung, Indonesia
+                      </p>
+                    </div>
+                  </button>
+                </li>
+                <li class="group">
+                  <button
+                    type="button"
+                    class="flex cursor-pointer gap-1.5 px-6 py-5 items-center h-[64px] w-[252px] transition-all duration-300 hover:bg-[#f2f2f2]"
+                  >
+                    <img
+                      src="./assets/images/icons/Location.svg"
+                      alt=""
+                      class=""
+                    />
+                    <div class="flex">
+                      <p class="text-[16px] leading-6 font-medium text-muted">
+                        Bandung, Indonesia
+                      </p>
+                    </div>
+                  </button>
+                </li>
+                <li class="group">
+                  <button
+                    type="button"
+                    class="flex cursor-pointer gap-1.5 px-6 py-5 items-center h-[64px] w-[252px] transition-all duration-300 hover:bg-[#f2f2f2]"
+                  >
+                    <img
+                      src="./assets/images/icons/Location.svg"
+                      alt=""
+                      class=""
+                    />
+                    <div class="flex">
+                      <p class="text-[16px] leading-6 font-medium text-muted">
+                        Jember, Indonesia
+                      </p>
+                    </div>
+                  </button>
+                </li>
+              </ul>
             </div>
           </div>
           <div class="flex gap-5">
