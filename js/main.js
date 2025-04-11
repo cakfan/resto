@@ -25,7 +25,7 @@ document.addEventListener("DOMContentLoaded", () => {
       experience: "8 Years",
       restaurant: "Green Garden",
       restaurantImage: "./assets/images/thumbnails/resto-3.png",
-      chefImage: "./assets/images/thumbnails/chef-2.png",
+      chefImage: "./assets/images/thumbnails/chef-2.webp",
     },
     {
       chefName: "Asep Vandal",
@@ -34,7 +34,7 @@ document.addEventListener("DOMContentLoaded", () => {
       experience: "10 Years",
       restaurant: "Sundanese Delight",
       restaurantImage: "./assets/images/thumbnails/resto-2.png",
-      chefImage: "./assets/images/thumbnails/chef-3.png",
+      chefImage: "./assets/images/thumbnails/chef-3.webp",
     },
     {
       chefName: "I Made Invoker",
@@ -43,7 +43,7 @@ document.addEventListener("DOMContentLoaded", () => {
       experience: "15 Years",
       restaurant: "Bali Bistro",
       restaurantImage: "./assets/images/thumbnails/resto-1.png",
-      chefImage: "./assets/images/thumbnails/chef-4.png",
+      chefImage: "./assets/images/thumbnails/chef-4.webp",
     },
   ];
 
