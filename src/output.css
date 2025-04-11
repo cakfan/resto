@@ -206,6 +206,9 @@
   .bottom-10 {
     bottom: calc(var(--spacing) * 10);
   }
+  .bottom-\[33px\] {
+    bottom: 33px;
+  }
   .bottom-\[134px\] {
     bottom: 134px;
   }
