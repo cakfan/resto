@@ -391,18 +391,20 @@
 
       <!-- Popular restaurant -->
       <section class="flex justify-center">
-        <div class="flex items-center w-[1320px] m-[60px] h-[475px]">
+        <div class="flex items-center w-[1320px] m-[60px]">
           <div class="w-[367px]">
-            <span
-              class="mb-1.5 text-[16px] leading-6 font-semibold text-secondary uppercase"
-              >Top 3 Featured Restaurant</span
-            >
-            <h2
-              class="mb-5 w-full text-nowrap text-[28px] leading-[42px] font-semibold"
-            >
-              Most Popular Restaurants
-            </h2>
-            <p class="w-[360px] pr-2 text-[16px] leading-6 text-muted">
+            <div class="flex flex-col gap-1.5">
+              <span
+                class="text-[16px] leading-6 font-semibold text-secondary uppercase"
+                >Top 3 Featured Restaurant</span
+              >
+              <h2
+                class="w-full text-nowrap text-[28px] leading-[42px] font-semibold"
+              >
+                Most Popular Restaurants
+              </h2>
+            </div>
+            <p class="mt-5 w-[360px] pr-5 text-[16px] leading-6 text-muted">
               The best restaurant in our opinion is how much customers like it
               in terms of place, price, comfort and of course the taste of the
               food itself.
@@ -591,11 +593,11 @@
           <div class="flex w-full items-center justify-between">
             <div class="flex flex-col gap-1.5">
               <span
-                class="mb-1.5 text-[16px] leading-6 font-semibold text-secondary uppercase"
+                class="text-[16px] leading-6 font-semibold text-secondary uppercase"
                 >Restaurant Based by City</span
               >
               <h2
-                class="mb-5 w-full text-nowrap text-[28px] leading-[42px] font-semibold"
+                class="w-full text-nowrap text-[28px] leading-[42px] font-semibold"
               >
                 Restaurant Near You
               </h2>
@@ -687,7 +689,7 @@
                 class="object-cover w-full h-full"
               />
               <div
-                class="flex gap-[35px] p-6 items-center absolute left-6 bottom-6 right-6 bg-white rounded-3xl"
+                class="flex gap-[35px] p-6 items-center absolute left-6 bottom-[33px] right-6 bg-white rounded-3xl"
               >
                 <div class="flex flex-col gap-1 w-[260px]">
                   <div class="flex items-center">
@@ -732,7 +734,7 @@
                 class="object-cover w-full h-full"
               />
               <div
-                class="flex gap-[35px] p-6 items-center absolute left-6 bottom-6 right-6 bg-white rounded-3xl"
+                class="flex gap-[35px] p-6 items-center absolute left-6 bottom-[33px] right-6 bg-white rounded-3xl"
               >
                 <div class="flex flex-col gap-1 w-[260px]">
                   <div class="flex items-center">
@@ -777,7 +779,7 @@
                 class="object-cover w-full h-full"
               />
               <div
-                class="flex gap-[35px] p-6 items-center absolute left-6 bottom-6 right-6 bg-white rounded-3xl"
+                class="flex gap-[35px] p-6 items-center absolute left-6 bottom-[33px] right-6 bg-white rounded-3xl"
               >
                 <div class="flex flex-col gap-1 w-[260px]">
                   <div class="flex items-center">
@@ -843,12 +845,16 @@
               />
             </div>
             <div
-              class="absolute top-10 right-0 px-[46px] py-[30px] flex flex-col h-[203px] w-[179px] bg-white rounded-3xl drop-shadow-custom"
+              class="absolute top-10 right-0 px-[46px] py-[30px] flex flex-col items-center h-[203px] w-[179px] bg-white rounded-3xl drop-shadow-custom"
             >
               <div
                 class="mb-3 flex items-center justify-center h-20 w-20 bg-[#FFF7ED] rounded-full"
               >
-                <img src="./assets/images/icons/shield.svg" alt="" class="" />
+                <img
+                  src="./assets/images/icons/shield.svg"
+                  alt=""
+                  class="h-[50px] w-[50px] shrink-0"
+                />
               </div>
               <div class="w-[87px] text-center">
                 <p
@@ -870,27 +876,31 @@
                 />
               </div>
               <div class="w-[174px]">
-                <span class="mb-1 text-[16px] leading-6 text-muted"
-                  >Chef at restaurant:</span
-                >
-                <p class="resto-name mb-6 text-lg leading-[27px] font-semibold">
-                  Pearl Dolphin
-                </p>
-                <a
-                  href="#"
-                  class="flex text-[16px] leading-6 font-semibold text-primary"
-                >
-                  <span>View Details</span>
-                  <div
-                    class="flex items-center justify-center h-6 w-6 mask-[url('./assets/images/icons/arrow_right.svg')] mask-no-repeat mask-contain bg-primary"
-                  >
-                    <img
-                      src="./assets/images/icons/arrow_right.svg"
-                      alt=""
-                      class="opacity-0"
-                    />
+                <div class="flex flex-col gap-6">
+                  <div class="flex flex-col gap-1">
+                    <span class="text-[16px] leading-6 text-muted"
+                      >Chef at restaurant:</span
+                    >
+                    <p class="resto-name text-lg leading-[27px] font-semibold">
+                      Pearl Dolphin
+                    </p>
                   </div>
-                </a>
+                  <a
+                    href="#"
+                    class="flex text-[16px] leading-6 font-semibold text-primary"
+                  >
+                    <span>View Details</span>
+                    <div
+                      class="flex items-center justify-center h-6 w-6 mask-[url('./assets/images/icons/arrow_right.svg')] mask-no-repeat mask-contain bg-primary"
+                    >
+                      <img
+                        src="./assets/images/icons/arrow_right.svg"
+                        alt=""
+                        class="opacity-0"
+                      />
+                    </div>
+                  </a>
+                </div>
               </div>
             </div>
           </div>
@@ -901,7 +911,7 @@
                 >Top 4 Expert Chefs</span
               >
               <h2
-                class="mb-5 w-full text-nowrap text-[28px] leading-[42px] font-semibold"
+                class="w-full text-nowrap text-[32px] leading-[48px] font-semibold"
               >
                 Expert Chefs In Fuddy
               </h2>
@@ -910,7 +920,7 @@
             <div class="tab-menu flex flex-col gap-5">
               <!-- Tab item 1 -->
               <div
-                class="tab-item p-6 flex flex-col gap-1.5 h-[141px] w-[596px] rounded-3xl group transition-all duration-300 hover:bg-white"
+                class="tab-item cursor-pointer p-6 flex flex-col gap-1.5 h-[141px] w-[596px] rounded-3xl group transition-all duration-300 hover:bg-white"
               >
                 <span
                   class="text-[16px] leading-6 font-medium text-muted uppercase"
@@ -924,7 +934,7 @@
                   </h2>
                   <a
                     href="#"
-                    class="flex text-[16px] leading-6 font-semibold text-primary"
+                    class="flex text-[16px] leading-6 font-medium text-primary"
                   >
                     <span>Profile Details</span>
                     <div
@@ -939,11 +949,15 @@
                   </a>
                 </div>
                 <div class="flex items-center gap-1.5">
-                  <img
-                    src="./assets/images/icons/Location.svg"
-                    alt=""
-                    class="shrink-0"
-                  />
+                  <div
+                    class="location-icon transition-all duration-300 mask-[url('./assets/images/icons/Location.svg')] mask-no-repeat mask-contain bg-muted"
+                  >
+                    <img
+                      src="./assets/images/icons/Location.svg"
+                      alt=""
+                      class="h-6 w-6 opacity-0"
+                    />
+                  </div>
                   <p class="text-[16px] leading-6 text-muted">
                     Jakarta, Indonesia
                   </p>
@@ -952,7 +966,7 @@
 
               <!-- Tab item 2 -->
               <div
-                class="tab-item p-6 flex flex-col gap-1.5 h-[141px] w-[596px] rounded-3xl group transition-all duration-300 hover:bg-white"
+                class="tab-item cursor-pointer p-6 flex flex-col gap-1.5 h-[141px] w-[596px] rounded-3xl group transition-all duration-300 hover:bg-white"
               >
                 <span
                   class="text-[16px] leading-6 font-medium text-muted uppercase"
@@ -966,7 +980,7 @@
                   </h2>
                   <a
                     href="#"
-                    class="hidden text-[16px] leading-6 font-semibold text-primary"
+                    class="hidden text-[16px] leading-6 font-medium text-primary"
                   >
                     <span>Profile Details</span>
                     <div
@@ -981,11 +995,15 @@
                   </a>
                 </div>
                 <div class="flex items-center gap-1.5">
-                  <img
-                    src="./assets/images/icons/Location.svg"
-                    alt=""
-                    class="shrink-0"
-                  />
+                  <div
+                    class="location-icon transition-all duration-300 mask-[url('./assets/images/icons/Location.svg')] mask-no-repeat mask-contain bg-foreground"
+                  >
+                    <img
+                      src="./assets/images/icons/Location.svg"
+                      alt=""
+                      class="h-6 w-6 opacity-0"
+                    />
+                  </div>
                   <p class="text-[16px] leading-6 text-muted">
                     Bandung, Indonesia
                   </p>
@@ -994,7 +1012,7 @@
 
               <!-- Tab item 3 -->
               <div
-                class="tab-item p-6 flex flex-col gap-1.5 h-[141px] w-[596px] rounded-3xl group transition-all duration-300 hover:bg-white"
+                class="tab-item cursor-pointer p-6 flex flex-col gap-1.5 h-[141px] w-[596px] rounded-3xl group transition-all duration-300 hover:bg-white"
               >
                 <span
                   class="text-[16px] leading-6 font-medium text-muted uppercase"
@@ -1008,7 +1026,7 @@
                   </h2>
                   <a
                     href="#"
-                    class="hidden text-[16px] leading-6 font-semibold text-primary"
+                    class="hidden text-[16px] leading-6 font-medium text-primary"
                   >
                     <span>Profile Details</span>
                     <div
@@ -1023,11 +1041,15 @@
                   </a>
                 </div>
                 <div class="flex items-center gap-1.5">
-                  <img
-                    src="./assets/images/icons/Location.svg"
-                    alt=""
-                    class="shrink-0"
-                  />
+                  <div
+                    class="location-icon transition-all duration-300 mask-[url('./assets/images/icons/Location.svg')] mask-no-repeat mask-contain bg-foreground"
+                  >
+                    <img
+                      src="./assets/images/icons/Location.svg"
+                      alt=""
+                      class="h-6 w-6 opacity-0"
+                    />
+                  </div>
                   <p class="text-[16px] leading-6 text-muted">
                     Sunda, Indonesia
                   </p>
@@ -1036,7 +1058,7 @@
 
               <!-- Tab item 4 -->
               <div
-                class="tab-item p-6 flex flex-col gap-1.5 h-[141px] w-[596px] rounded-3xl group transition-all duration-300 hover:bg-white"
+                class="tab-item cursor-pointer p-6 flex flex-col gap-1.5 h-[141px] w-[596px] rounded-3xl group transition-all duration-300 hover:bg-white"
               >
                 <span
                   class="text-[16px] leading-6 font-medium text-muted uppercase"
@@ -1050,7 +1072,7 @@
                   </h2>
                   <a
                     href="#"
-                    class="hidden text-[16px] leading-6 font-semibold text-primary"
+                    class="hidden text-[16px] leading-6 font-medium text-primary"
                   >
                     <span>Profile Details</span>
                     <div
@@ -1065,11 +1087,15 @@
                   </a>
                 </div>
                 <div class="flex items-center gap-1.5">
-                  <img
-                    src="./assets/images/icons/Location.svg"
-                    alt=""
-                    class="shrink-0"
-                  />
+                  <div
+                    class="location-icon transition-all duration-300 mask-[url('./assets/images/icons/Location.svg')] mask-no-repeat mask-contain bg-foreground"
+                  >
+                    <img
+                      src="./assets/images/icons/Location.svg"
+                      alt=""
+                      class="h-6 w-6 opacity-0"
+                    />
+                  </div>
                   <p class="text-[16px] leading-6 text-muted">
                     Bali, Indonesia
                   </p>

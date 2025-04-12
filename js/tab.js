@@ -74,6 +74,8 @@ document.addEventListener("DOMContentLoaded", () => {
         profileDetailsLink.classList.remove("flex");
         profileDetailsLink.classList.add("hidden");
       }
+      const locationIcon = tab.querySelector(".location-icon");
+      if (locationIcon) locationIcon.classList.add("bg-muted");
     });
 
     const activeTab = tabs[index];
@@ -82,6 +84,11 @@ document.addEventListener("DOMContentLoaded", () => {
     if (profileDetailsLink) {
       profileDetailsLink.classList.remove("hidden");
       profileDetailsLink.classList.add("flex");
+    }
+    const locationIcon = activeTab.querySelector(".location-icon");
+    if (locationIcon) {
+      locationIcon.classList.remove("bg-muted");
+      locationIcon.classList.add("bg-foreground");
     }
   }
 
