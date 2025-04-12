@@ -317,6 +317,9 @@
   .mb-\[123px\] {
     margin-bottom: 123px;
   }
+  .ml-\[1px\] {
+    margin-left: 1px;
+  }
   .ml-\[85px\] {
     margin-left: 85px;
   }
@@ -379,6 +382,9 @@
   }
   .h-\[38px\] {
     height: 38px;
+  }
+  .h-\[50px\] {
+    height: 50px;
   }
   .h-\[56px\] {
     height: 56px;
@@ -457,6 +463,9 @@
   }
   .w-\[21px\] {
     width: 21px;
+  }
+  .w-\[50px\] {
+    width: 50px;
   }
   .w-\[58px\] {
     width: 58px;
@@ -601,6 +610,9 @@
   }
   .gap-5 {
     gap: calc(var(--spacing) * 5);
+  }
+  .gap-6 {
+    gap: calc(var(--spacing) * 6);
   }
   .gap-8 {
     gap: calc(var(--spacing) * 8);
