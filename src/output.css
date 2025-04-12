@@ -679,6 +679,12 @@
   .bg-\[\#f2f2f2\] {
     background-color: #f2f2f2;
   }
+  .bg-foreground {
+    background-color: var(--foreground);
+  }
+  .bg-muted {
+    background-color: var(--muted);
+  }
   .bg-primary {
     background-color: var(--primary);
   }
@@ -699,6 +705,9 @@
   }
   .bg-white {
     background-color: var(--color-white);
+  }
+  .mask-\[url\(\'\.\/assets\/images\/icons\/Location\.svg\'\)\] {
+    mask-image: url('./assets/images/icons/Location.svg');
   }
   .mask-\[url\(\'\.\/assets\/images\/icons\/arrow_right\.svg\'\)\] {
     mask-image: url('./assets/images/icons/arrow_right.svg');
@@ -803,6 +812,9 @@
   .text-\[28px\] {
     font-size: 28px;
   }
+  .text-\[32px\] {
+    font-size: 32px;
+  }
   .leading-6 {
     --tw-leading: calc(var(--spacing) * 6);
     line-height: calc(var(--spacing) * 6);
@@ -822,6 +834,10 @@
   .leading-\[42px\] {
     --tw-leading: 42px;
     line-height: 42px;
+  }
+  .leading-\[48px\] {
+    --tw-leading: 48px;
+    line-height: 48px;
   }
   .font-medium {
     --tw-font-weight: var(--font-weight-medium);
