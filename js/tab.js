@@ -75,7 +75,10 @@ document.addEventListener("DOMContentLoaded", () => {
         profileDetailsLink.classList.add("opacity-0");
       }
       const locationIcon = tab.querySelector(".location-icon");
-      if (locationIcon) locationIcon.classList.add("bg-foreground");
+      if (locationIcon) {
+        locationIcon.classList.remove("bg-muted");
+        locationIcon.classList.add("bg-foreground");
+      }
     });
 
     const activeTab = tabs[index];
