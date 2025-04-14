@@ -512,6 +512,9 @@
   .w-\[315px\] {
     width: 315px;
   }
+  .w-\[322px\] {
+    width: 322px;
+  }
   .w-\[330px\] {
     width: 330px;
   }
@@ -562,6 +565,9 @@
   }
   .min-w-\[1320px\] {
     min-width: 1320px;
+  }
+  .flex-1 {
+    flex: 1;
   }
   .flex-shrink {
     flex-shrink: 1;
