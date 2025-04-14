@@ -110,14 +110,14 @@
         <!-- Search and Login -->
         <div class="flex gap-5">
           <form
-            class="group flex gap-2.5 py-4 px-7 bg-white rounded-[12px] transition-all duration-300 focus-within:ring-2 focus-within:ring-secondary hover:ring-2 hover:ring-secondary"
+            class="group flex w-[322px] gap-2.5 py-4 px-7 bg-white rounded-[12px] transition-all duration-300 focus-within:ring-2 focus-within:ring-secondary hover:ring-2 hover:ring-secondary"
           >
             <div class="flex items-center justify-center h-6 w-6 shrink-0">
               <img src="./assets/images/icons/search.svg" alt="" class="" />
             </div>
             <input
               type="text"
-              class="w-[204px] text-[16px] font-medium leading-6 placeholder-placeholder group-hover:outline-none focus:outline-none"
+              class="w-full text-[16px] font-medium leading-6 placeholder-placeholder group-hover:outline-none focus:outline-none"
               placeholder="Search your favorite food"
             />
           </form>
@@ -137,7 +137,7 @@
         <div class="swiper !px-[60px]">
           <div class="swiper-wrapper flex py-[60px]">
             <!-- Item 1 -->
-            <div class="swiper-slide relative !w-[1208px] !h-[564px]">
+            <div class="group swiper-slide relative !w-[1208px] !h-[564px]">
               <div
                 class="absolute right-0 w-[1128px] h-[564px] rounded-3xl overflow-clip"
               >
@@ -148,7 +148,7 @@
                 />
               </div>
               <div
-                class="absolute flex flex-col gap-1 left-0 top-[133px] bottom-[134px] h-[297px] w-[390px] rounded-3xl bg-white pl-6 py-6 pr-[140px]"
+                class="absolute transition-all duration-300 opacity-0 group-hover:opacity-100 flex flex-col gap-1 left-0 top-[133px] bottom-[134px] h-[297px] w-[390px] rounded-3xl bg-white pl-6 py-6 pr-[140px]"
               >
                 <div class="flex items-center h-[27px] w-[210px]">
                   <div class="flex gap-[6.5px] -mt-[3px] pr-[3px]">
@@ -230,13 +230,95 @@
             </div>
 
             <!-- Item 2 -->
-            <div class="swiper-slide !w-[1128px] !h-[564px]">
-              <div class="w-[1128px] h-[564px] rounded-3xl overflow-clip">
+            <div class="group swiper-slide relative !w-[1208px] !h-[564px]">
+              <div
+                class="absolute right-0 w-[1128px] h-[564px] rounded-3xl overflow-clip"
+              >
                 <img
                   src="./assets/images/thumbnails/ads-2.png"
                   alt=""
                   class="object-cover w-full"
                 />
+              </div>
+              <div
+                class="absolute transition-all duration-300 opacity-0 group-hover:opacity-100 flex flex-col gap-1 left-0 top-[133px] bottom-[134px] h-[297px] w-[390px] rounded-3xl bg-white pl-6 py-6 pr-[140px]"
+              >
+                <div class="flex items-center h-[27px] w-[210px]">
+                  <div class="flex gap-[6.5px] -mt-[3px] pr-[3px]">
+                    <img
+                      src="./assets/images/icons/star.svg"
+                      alt=""
+                      class="w-[18px] shrink-0"
+                    />
+                    <img
+                      src="./assets/images/icons/star.svg"
+                      alt=""
+                      class="w-[18px] shrink-0"
+                    />
+                    <img
+                      src="./assets/images/icons/star.svg"
+                      alt=""
+                      class="w-[18px] shrink-0"
+                    />
+                    <img
+                      src="./assets/images/icons/star.svg"
+                      alt=""
+                      class="w-[18px] shrink-0"
+                    />
+                    <img
+                      src="./assets/images/icons/star.svg"
+                      alt=""
+                      class="w-[18px] shrink-0"
+                    />
+                  </div>
+                  <div class="flex gap-1 items-center">
+                    <p class="text-lg leading-[27px] font-semibold text-star">
+                      5.0
+                    </p>
+                    <p class="text-[16px] text-muted">(5.2K+)</p>
+                  </div>
+                </div>
+                <h2 class="text-[22px] font-semibold leading-[33px]">
+                  Jember Restaurant
+                </h2>
+                <p class="text-lg font-semibold leading-[27px] text-muted">
+                  IDR 39.999 - IDR 460.000
+                </p>
+                <div class="flex gap-1.5 items-center">
+                  <div class="h-6 w-6 flex items-center justify-center">
+                    <img
+                      src="./assets/images/icons/Location.svg"
+                      alt=""
+                      class="h-6 w-6"
+                    />
+                  </div>
+                  <p class="text-[16px] leading-6 text-muted">
+                    Jember, Indonesia
+                  </p>
+                </div>
+                <div class="mt-[30px] flex flex-col gap-3">
+                  <a
+                    href="#"
+                    class="flex items-center justify-center text-[16px] font-semibold leading-6 bg-primary rounded-[12px] w-[226px] h-14 hover:shadow-primary transition-all duration-300"
+                  >
+                    <span>Make Reservation</span>
+                    <img
+                      src="./assets/images/icons/arrow_right.svg"
+                      alt=""
+                      class=""
+                    />
+                  </a>
+                  <div class="flex gap-1.5 items-center">
+                    <img
+                      src="./assets/images/icons/info_square.svg"
+                      alt=""
+                      class="h-6 w-6"
+                    />
+                    <p class="text-[16px] leading-6 text-muted">
+                      No extra cost
+                    </p>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -907,7 +989,7 @@
           <div class="flex flex-col gap-8 w-[596px]">
             <div class="flex flex-col gap-1">
               <span
-                class="mb-1.5 text-[16px] leading-6 font-semibold text-secondary uppercase"
+                class="text-[16px] leading-6 font-semibold text-secondary uppercase"
                 >Top 4 Expert Chefs</span
               >
               <h2
@@ -934,11 +1016,11 @@
                   </h2>
                   <a
                     href="#"
-                    class="flex text-[16px] leading-6 font-medium text-primary"
+                    class="flex text-[16px] leading-6 font-medium text-primary shrink-0"
                   >
                     <span>Profile Details</span>
                     <div
-                      class="flex items-center justify-center h-6 w-6 mask-[url('./assets/images/icons/arrow_right.svg')] mask-no-repeat mask-contain bg-primary"
+                      class="flex items-center justify-center h-6 w-6 mask-[url('./assets/images/icons/arrow_right.svg')] mask-no-repeat mask-contain bg-primary shrink-0"
                     >
                       <img
                         src="./assets/images/icons/arrow_right.svg"
@@ -980,11 +1062,11 @@
                   </h2>
                   <a
                     href="#"
-                    class="hidden text-[16px] leading-6 font-medium text-primary"
+                    class="hidden text-[16px] leading-6 font-medium text-primary shrink-0"
                   >
                     <span>Profile Details</span>
                     <div
-                      class="flex items-center justify-center h-6 w-6 mask-[url('./assets/images/icons/arrow_right.svg')] mask-no-repeat mask-contain bg-primary"
+                      class="flex items-center justify-center h-6 w-6 mask-[url('./assets/images/icons/arrow_right.svg')] mask-no-repeat mask-contain bg-primary shrink-0"
                     >
                       <img
                         src="./assets/images/icons/arrow_right.svg"
@@ -1026,7 +1108,7 @@
                   </h2>
                   <a
                     href="#"
-                    class="hidden text-[16px] leading-6 font-medium text-primary"
+                    class="hidden text-[16px] leading-6 font-medium text-primary shrink-0"
                   >
                     <span>Profile Details</span>
                     <div
@@ -1042,7 +1124,7 @@
                 </div>
                 <div class="flex items-center gap-1.5">
                   <div
-                    class="location-icon transition-all duration-300 mask-[url('./assets/images/icons/Location.svg')] mask-no-repeat mask-contain bg-foreground"
+                    class="location-icon transition-all duration-300 mask-[url('./assets/images/icons/Location.svg')] mask-no-repeat mask-contain bg-foreground shrink-0"
                   >
                     <img
                       src="./assets/images/icons/Location.svg"
@@ -1072,7 +1154,7 @@
                   </h2>
                   <a
                     href="#"
-                    class="hidden text-[16px] leading-6 font-medium text-primary"
+                    class="hidden text-[16px] leading-6 font-medium text-primary shrink-0"
                   >
                     <span>Profile Details</span>
                     <div
@@ -1088,7 +1170,7 @@
                 </div>
                 <div class="flex items-center gap-1.5">
                   <div
-                    class="location-icon transition-all duration-300 mask-[url('./assets/images/icons/Location.svg')] mask-no-repeat mask-contain bg-foreground"
+                    class="location-icon transition-all duration-300 mask-[url('./assets/images/icons/Location.svg')] mask-no-repeat mask-contain bg-foreground shrink-0"
                   >
                     <img
                       src="./assets/images/icons/Location.svg"
