@@ -71,8 +71,8 @@ document.addEventListener("DOMContentLoaded", () => {
       tab.classList.remove("bg-white");
       const profileDetailsLink = tab.querySelector("a");
       if (profileDetailsLink) {
-        profileDetailsLink.classList.remove("flex");
-        profileDetailsLink.classList.add("hidden");
+        profileDetailsLink.classList.remove("opacity-100");
+        profileDetailsLink.classList.add("opacity-0");
       }
       const locationIcon = tab.querySelector(".location-icon");
       if (locationIcon) locationIcon.classList.add("bg-foreground");
@@ -82,8 +82,8 @@ document.addEventListener("DOMContentLoaded", () => {
     activeTab.classList.add("bg-white");
     const profileDetailsLink = activeTab.querySelector("a");
     if (profileDetailsLink) {
-      profileDetailsLink.classList.remove("hidden");
-      profileDetailsLink.classList.add("flex");
+      profileDetailsLink.classList.remove("opacity-0");
+      profileDetailsLink.classList.add("opacity-100");
     }
     const locationIcon = activeTab.querySelector(".location-icon");
     if (locationIcon) {
