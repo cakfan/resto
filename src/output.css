@@ -212,6 +212,9 @@
   .bottom-\[134px\] {
     bottom: 134px;
   }
+  .-left-20 {
+    left: calc(var(--spacing) * -20);
+  }
   .left-0 {
     left: calc(var(--spacing) * 0);
   }
@@ -811,6 +814,9 @@
   .pt-6 {
     padding-top: calc(var(--spacing) * 6);
   }
+  .\!pr-\[60px\] {
+    padding-right: 60px !important;
+  }
   .pr-2 {
     padding-right: calc(var(--spacing) * 2);
   }
@@ -825,6 +831,9 @@
   }
   .pr-\[140px\] {
     padding-right: 140px;
+  }
+  .\!pl-\[140px\] {
+    padding-left: 140px !important;
   }
   .pl-6 {
     padding-left: calc(var(--spacing) * 6);
